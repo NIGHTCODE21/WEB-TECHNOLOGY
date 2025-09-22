@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Sign In</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <div class="home-div">
+    <img src="3.jpg" alt="Joeli Icon" width="35" height="35" class="icon">
+    <h2 class="nightcode">NightCode ✨</h2>
+  </div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html" >About</a>
+    <a href="media.html" >Media</a>
+    <a href="profile.html" >Profile</a>
+    <a href="practicals.html" >Practicals</a>
+    <a href="review.html" >Feedback</a>
+
+  </nav>
+</header>
+
+  <main class="main-review">
+    <form action="home.html" autocomplete="on" novalidate>
+      <h1>Sign In</h1>
+
+      <label for="signin-email">Email:</label>
+      <input type="email" id="signin-email" name="email" autocomplete="email" required />
+
+      <label for="signin-password">Password:</label>
+      <input type="password" id="signin-password" name="password" autocomplete="current-password" required />
+
+      <input type="checkbox" id="remember" name="remember" />
+      <label for="remember">Remember me</label>
+
+      <input type="hidden" name="redirect" value="dashboard" />
+
+      <button type="submit">Sign In</button>
+      <button type="reset">Clear</button>
+
+      <div id="div-IN-UP">
+      Don't have an account? <a href="SignUp.html">Sign Up</a>
+    </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>This page is part of Experiment 3. Created by Priyanshi Pankhaniya (23BCP507D).</p>
+  </footer>
+
+</body>
+</html>

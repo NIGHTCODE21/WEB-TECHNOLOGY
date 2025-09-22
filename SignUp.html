@@ -1,0 +1,129 @@
+<html>
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <div class="home-div">
+    <img src="3.jpg" alt="Joeli Icon" width="35" height="35" class="icon">
+    <h2 class="nightcode">NightCode ✨</h2>
+  </div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html" >About</a>
+    <a href="media.html" >Media</a>
+    <a href="profile.html" >Profile</a>
+    <a href="Signin.html" >Sign In</a>
+    <a href="review.html">Feedback</a>
+    <a href="practicals.html">Practicals</a>
+    
+
+  </nav>
+</header>
+
+  <main class="main-review">
+    <form action="home.html" autocomplete="on" novalidate>
+      <h1>Sign Up</h1>
+      <fieldset>
+      <legend>Account Details</legend>
+
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" autocomplete="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" autocomplete="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" autocomplete="new-password" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" autocomplete="tel" />
+
+      <label for="website">Personal Website</label>
+      <input type="url" id="website" name="website" autocomplete="url" />
+
+      <p id="p-gender">Gender</p>
+
+<label id="label-radio">
+  <input type="radio" name="gender" value="male" />
+  Male
+</label>
+
+<label id="label-radio">
+  <input type="radio" name="gender" value="female" />
+  Female
+</label>
+
+<label id="label-radio">
+  <input type="radio" name="gender" value="other" />
+  Other
+</label>
+
+
+<br>
+
+<label>
+  <input type="checkbox" name="terms" required />
+  Agree to Terms
+</label>
+</fieldset>
+<br>
+
+<fieldset>
+      <legend>Profile Preferences</legend>
+
+
+      <label for="profilepic" style="margin-top: 25px;">Profile Picture</label>
+      <input type="file" id="profilepic" name="profilepic" accept="image/*" />
+
+      <label for="color">Theme Color</label>
+      <input type="color" id="color" name="color" />
+
+      <label for="privacy">Privacy Level</label>
+      <input type="range" id="privacy" name="privacy" min="0" max="10" value="5" />
+      
+
+      <label for="interests">Search Interests</label>
+      <input type="search" id="interests" name="interests" list="interestsList" />
+      <datalist id="interestsList">
+        <option value="Sports" />
+        <option value="Music" />
+        <option value="Technology" />
+      </datalist>
+
+      <label for="country">Country</label>
+      <select id="country" name="country" size="2" multiple>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+      </select>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" />
+
+      <label for="gradMonth">Graduation Month</label>
+      <input type="month" id="gradMonth" name="gradMonth" />
+</fieldset>
+
+
+      
+
+      <div>
+        <button type="submit">Create Account</button>
+        <button type="reset">Clear Form</button>
+      </div>
+      <div id="div-IN-UP">
+      Already have an account? <a href="Signin.html">Sign In</a>
+    </div>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>This page is part of Experiment 3. Created by Priyanshi Pankhaniya (23BCP507D).</p>
+  </footer>
+
+</body>
+</html>

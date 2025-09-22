@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interest Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="home-div">
+    <img src="3.jpg" alt="Joeli Icon" width="35" height="35" class="icon">
+    <h2 class="nightcode">NightCode ✨</h2>
+  </div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="media.html">Media</a>
+    <a href="profile.html">Profile</a>
+    <a href="Signin.html">Sign In</a>
+    <a href="review.html">Feedback</a>
+    <a href="practicals.html">Practicals</a>
+  </nav>
+</header>
+
+<div id="div-intro">
+<center>
+  <form>
+    <fieldset>
+      <legend>Interest Calculator</legend>
+
+      <label>Principal (₹): <span id="pVal">5000</span></label><br>
+      <input type="range" id="principal" min="1000" max="100000" step="1000" value="5000" onchange="calculateInterest()" oninput="updateDisplay()"><br><br>
+
+      <label>Rate (%): <span id="rVal">5</span></label><br>
+      <input type="range" id="rate" min="1" max="20" step="0.5" value="5" onchange="calculateInterest()" oninput="updateDisplay()"><br><br>
+
+      <label>Time (Years): <span id="tVal">1</span></label><br>
+      <input type="range" id="time" min="1" max="30" step="1" value="1" onchange="calculateInterest()" oninput="updateDisplay()"><br><br>
+    </fieldset>
+  </form>
+</center>
+
+<div id="result" style="margin-top:20px; font-weight:bold;"></div>
+</div>
+
+
+
+<script>
+function updateDisplay() {
+  document.getElementById('pVal').textContent = document.getElementById('principal').value;
+  document.getElementById('rVal').textContent = document.getElementById('rate').value;
+  document.getElementById('tVal').textContent = document.getElementById('time').value;
+}
+
+function calculateInterest() {
+  const p = parseFloat(document.getElementById('principal').value);
+  const r = parseFloat(document.getElementById('rate').value);
+  const t = parseFloat(document.getElementById('time').value);
+
+  const si = (p * r * t) / 100;
+  const total = p + si;
+
+  document.getElementById('result').innerHTML =
+    `Simple Interest: ₹${si.toFixed(2)}<br>Total Amount: ₹${total.toFixed(2)}`;
+}
+
+updateDisplay();
+calculateInterest();
+</script>
+<footer>
+  <p>This page is part of Experiment 5. Created by Priyanshi Pankhaniya (23BCP507D).</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Review Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="home-div">
+    <img src="3.jpg" alt="Joeli Icon" width="35" height="35" class="icon">
+    <h2 class="nightcode">NightCode ✨</h2>
+  </div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html" >About</a>
+    <a href="media.html" >Media</a>
+    <a href="profile.html" >Profile</a>
+    <a href="Signin.html" >Sign In</a>
+    <a href="practicals.html">Practicals</a>
+    
+
+  </nav>
+</header>
+<main class="main-review">
+  <form action="home.html">
+<fieldset>
+      <legend>Leave A Review</legend>
+  <label for="reviewerName">Your Name</label>
+  <input type="text" id="reviewerName" name="reviewerName" placeholder="Enter your name">
+
+  <label for="rating">Rating</label>
+  <select id="rating" name="rating" required>
+    <option value="">--Select--</option>
+    <option value="4">Very Satisfied</option>
+    <option value="3">Satisfied</option>
+    <option value="2">Somewhat Satisfied</option>
+    <option value="1">Not Satisfied</option>
+  </select>
+
+  <label for="reviewText">Your Review</label>
+  <textarea id="reviewText" name="reviewText" rows="4" placeholder="Write your review here..."></textarea>
+
+  <button type="submit">Submit Review</button>
+  </fieldset>
+</form>
+</main>
+<footer>
+    <p>This page is part of Experiment 3. Created by Priyanshi Pankhaniya (23BCP507D).</p>
+  </footer>
+
+
+</body>
+</html>

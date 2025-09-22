@@ -1,0 +1,296 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #222;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+     header a:hover {
+      color: #110214;
+    }
+
+    mark
+    {
+        background-color: yellow;
+    }
+
+    blockquote
+    {
+        font-style: italic; 
+        color: #666; 
+        margin: 40px auto 20px; 
+        max-width: 500px;
+    }
+
+    hr{
+        margin: 40px auto; 
+        width: 80%;
+        
+    }
+
+    iframe{
+       border:1px solid #ccc; 
+       border-radius: 8px;
+    }
+
+    footer
+    {
+        text-align: center; 
+        padding: 15px; 
+        background-color: #f1f1f1; 
+        color: #444;
+    }
+
+
+   
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: black;
+  text-align: center;
+}
+
+    ul{
+        list-style-type: circle; 
+        text-align: left; 
+        max-width: 600px; 
+        margin: 20px auto;
+    }
+
+    ol{
+        text-align: left; 
+        max-width: 600px; 
+        margin: 20px auto;
+    }
+
+    legend {
+  font-weight: 700;
+  color: #444;
+  font-size: 1rem;
+  padding: 0 10px;
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+fieldset {
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+}
+
+ button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px 0;
+      font-size: 16px;
+      background-color: #d17eb0;
+      border: none;
+      border-radius: 6px;
+      color: #222;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #b914c5;
+    }
+     form {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 10px;
+      width: 360px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    p{
+        text-align: center;
+    }
+
+   
+   
+    
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+    }
+    input[type="text"],textarea,
+    select, input[type="email"],
+    input[type="password"],input[type="tel"],
+    input[type="url"],
+    input[type="file"],
+    input[type="color"],
+    input[type="range"],
+    input[type="search"],
+    input[type="date"],
+    input[type="month"],
+    input[type="number"]{
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    label[for="remember"] {
+      display: inline-block;
+      font-weight: normal;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+    
+    select[multiple] {
+      height: 70px;
+    }
+    .home-div
+    {
+       display: flex; 
+       align-items: center;
+    }
+
+    .icon
+    {
+       border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .nightcode
+    {
+        color: white;
+        margin: 0;
+    }
+
+    .h1-salesforce
+    {
+        color: #0B5CAB;
+    }
+
+    .h3-about
+    {
+        margin-top: 50px;
+    }
+
+    .p-about
+    {
+         margin-bottom: 10px;
+    }
+
+    .main-about
+    {
+        text-align: center; 
+        padding: 50px;
+    }
+
+    .main-review {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+     #div-intro
+    {
+        text-align: center; 
+        padding: 50px 20px;
+    }
+
+
+     #home-img
+    {
+        border-radius: 12px; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+        margin-top: 20px;
+    }
+
+    #profile-link
+    {
+        color: white; 
+        background-color: #0B5CAB; 
+        padding: 8px 8px;
+         border-radius: 8px; 
+         text-decoration: none;
+         text-align: center;
+    }
+
+     #profile-img {
+  border-radius: 50%;
+}
+
+#rank
+{
+    margin: 10px 0;
+    
+}
+
+#div-IN-UP
+{
+    text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+}
+
+#p-gender
+{
+    margin-top: 15px; 
+    font-weight: 600; 
+    color: #333;
+}
+
+#label-radio
+{
+    margin-right: 15px; cursor: pointer;
+}
+
+  
+
+    
+
+    
+    
